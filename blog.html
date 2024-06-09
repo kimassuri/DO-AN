@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./public/images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-circle-fill" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2024</h1>
+    </section>
+
+    <!-- blog page content -->
+
+    <section class="blog-content">
+        <div class="blog-left">
+            <img src="./public/images/certificate.jpg" alt="">
+            <h2>Our Certificate & Online Programs For 2024</h2>
+            <h3>Digital Marketing Certificate:</h3><br>
+            <p>This program equips learners with the essential skills and
+                knowledge needed to excel in the rapidly evolving field of digital marketing. Through a combination of
+                online modules, practical exercises, and real-world case studies, participants will learn about SEO,
+                social media marketing, content strategy, email marketing, and analytics.</p>
+            <br>
+            <b>Data Science Fundamentals Online Course: </b><br> 
+            <p>In collaboration with industry experts, this online
+                course introduces students to the fundamentals of data science. Participants will learn how to collect,
+                analyze, and interpret data using cutting-edge tools and techniques. Topics covered include data
+                visualization, statistical analysis, machine learning, and predictive modeling.</p>
+            <br>
+            <b>Project Management Professional (PMP) Certification Prep: </b><br>
+            <p>Designed for aspiring project
+                managers, this online program prepares students to obtain the prestigious Project Management
+                Professional (PMP) certification. Through interactive modules, practical exercises, and simulated exams,
+                participants will gain a comprehensive understanding of project management principles, processes, and
+                best practices.</p>
+            <br>
+            <b>Cybersecurity Essentials Certificate: </b><br>
+            <p>With the increasing threat of cyberattacks, there is a
+                growing demand for skilled cybersecurity professionals. This certificate program provides students with
+                the foundational knowledge and skills needed to secure computer systems and protect against cyber
+                threats. Topics covered include network security, cryptography, ethical hacking, and risk management.
+            </p>
+            <div class="comment-box">
+                <h3> Leave a comment</h3>
+                <form class="comment-form" action="data.html" method="post" id="comment" onsubmit="checkEmailAndName()" >
+                    <input type="text" placeholder="Enter Name" id="Name" name="Name" required>
+                    <input type="email" placeholder="Enter Email" id="Email" name="Email" required>
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>Journalism</span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Commerce</span>
+                <span>30</span>
+            </div>
+        </div>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <div class="snow-cavas">
+        <div class="snow"></div>
+    </div>
+    <script src="public\js\app.js"></script>
+    <div class="light"></div>
+
+
+    <footer>
+        <h4>About Us</h4>
+        <p>At Eduford University, our mission is to provide accessible, innovative, and high-quality education to students
+            from diverse backgrounds. We strive to foster a supportive learning environment that empowers students to
+            achieve their academic and personal goals. Our vision is to be a leader in education, driving positive
+            change in our communities and beyond.</p>
+        <div class="icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-youtube"></i>
+        </div>
+        <p>Made with <i class="bi bi-suit-heart-fill"></i> by easy Tutorials</p>
+    </footer>
+</body>
+
+</html>

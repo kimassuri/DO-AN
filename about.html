@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./public/images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-circle-fill" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+        <h1 style="padding-top: 50px;">About Us</h1>
+    </section>
+
+    <!-- About us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>
+                    We are the best choice for you !
+                </h1>
+                <p>Welcome to Eduford, where excellence is not just a goal, but a guarantee. We believe
+                    that education is the key to unlocking your full potential, and we're committed to providing you
+                    with the highest quality learning experience possible. With our expert faculty, innovative
+                    curriculum, and personalized support, we're confident that Elite Learning Academy is the best choice
+                    for your educational journey.<br>At Elite Learning, we're more than just an educational institution—we're a community
+                    dedicated to your success. Here's why we believe we're the best choice for you: <br><br>
+                <b class="titlemini">Expert Faculty: </b>Our faculty members are leaders in their fields, bringing years of industry
+                experience and academic expertise to the classroom. With small class sizes and personalized attention,
+                you'll have the opportunity to learn from the best and receive individualized support and mentorship.
+                <br><br>
+                <b class="titlemini">Innovative Curriculum: </b>Our curriculum is designed to be dynamic, relevant, and forward-thinking,
+                ensuring that you graduate with the skills and knowledge needed to excel in today's fast-paced world.
+                From hands-on projects to real-world case studies, our curriculum prepares you for the challenges and
+                opportunities of the future. <br><br>
+                <b class="titlemini">Personalized Support: </b>At Eduford, you're not just a number—you're a valued member
+                of our community. Our dedicated staff are here to support you every step of the way, from academic
+                advising to career counseling. Whatever your goals may be, we're here to help you achieve them. <br><br>
+                <b class="titlemini">Career Opportunities: </b>With our strong industry connections and robust alumni network, Elite
+                Learning Academy provides unparalleled access to internships, job opportunities, and networking events.
+                Whether you're looking to launch your career or advance in your current role, we'll help you get there. <br><br>
+                <b class="titlemini">Commitment to Excellence: </b>At Eduford, we're committed to excellence in
+                everything we do. From our rigorous admissions process to our high standards of academic rigor, we hold
+                ourselves to the highest standards to ensure that you receive a world-class education that prepares you
+                for success.
+                </p>
+                <a href="index.html" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="./public/images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <div class="snow-cavas">
+        <div class="snow"></div>
+    </div>
+    <script src="public\js\app.js"></script>
+    <div class="light"></div>
+
+    <footer>
+        <h4>About Us</h4>
+        <p>At Eduford University, our mission is to provide accessible, innovative, and high-quality education to
+            students
+            from diverse backgrounds. We strive to foster a supportive learning environment that empowers students to
+            achieve their academic and personal goals. Our vision is to be a leader in education, driving positive
+            change in our communities and beyond.</p>
+        <div class="icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-youtube"></i>
+        </div>
+        <p>Made with <i class="bi bi-suit-heart-fill"></i> by easy Tutorials</p>
+    </footer>
+</body>
+
+</html>
