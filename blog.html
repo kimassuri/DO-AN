@@ -65,21 +65,10 @@
             </p>
             <div class="comment-box">
                 <h3> Leave a comment</h3>
-                <form method="post" action="data1.html" class="needs-validation" novalidate>
-                    <div class="mb-3">
-                        <label for="username" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="username" placeholder="Enter Name" required pattern="^[a-zA-Z0-9]{5,}$">
-                        <div class="invalid-feedback">Sai username</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" placeholder="Enter Email" class="form-control" class required pattern="^[a-z0-9](\.?[a-z0-9])*@[a-z0-9]+(\.[a-z]{2,})+$">
-                         <div class="invalid-feedback">Sai Email</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="comment" class="form-label">Comment</label>
-                        <textarea rows="5" placeholder="Your Comment"></textarea>
-                    </div>
+                <form class="comment-form" action="data.html" id="comment" onsubmit="checkEmailAndName()" >
+                    <input type="text" placeholder="Enter Name" id="Name" name="Name" required>
+                    <input type="email" placeholder="Enter Email" id="Email" name="Email" required>
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
                     <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
                 </form>
             </div>
@@ -121,25 +110,6 @@
         function hideMenu() {
             navLinks.style.right = "-200px";
         }
-
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (() => {
-            'use strict'
-
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms = document.querySelectorAll('.needs-validation')
-
-            // Loop over them and prevent submission
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-                    form.classList.add('was-validated')
-                }, false)
-            })
-        })()
     </script>
 
     <div class="snow-cavas">
